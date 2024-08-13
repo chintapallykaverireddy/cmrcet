@@ -6,19 +6,37 @@
     <title>Registration using Table</title>
     <style type="text/css">
         body{
-            text-decoration: solid;
-            color: #000;
-            background-color: blanchedalmond;
+            margin: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(202, 235, 235);
         }
         .div-res{
-            margin: 20px;
+            justify-content: center;
+            border: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgb(91, 85, 85);
+            width: 600px;
+            height: 400px;
+        }
+        h1{
+             text-align: center;
+        }
+        table, tr{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 110px;
+            padding-right: 50px;
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
-    <center>
+   
         <div class="div-res">
-    <form action="submitt.html" method="post">
+    <form action="submitt.html" method="post" class="form-cls">
+           <h1>Registration Form</h1>
         <table style="width: 100%;">
            <tr>
             <td><label for="name">Name</label></td>
@@ -67,12 +85,11 @@
             </td>
            </tr> 
            <tr>
-            <td><a href="submitt.html"><input type="button" value="Submit"></a></td>
-            <td><input type="reset" value="Reset"></td>
+            <td style="font-size: 20px;"><a href="submitt.html"><input type="button" value="Submit"></a></td>
+            <td style="font-size: 20px;"><input type="reset" value="Reset"></td>
            </tr> 
         </table>
     </form>
 </div>
-    </center>
 </body>
 </html>
