@@ -6,19 +6,21 @@
     <title>Registration using Table</title>
     <style type="text/css">
         body{
-            margin: 100px;
+            margin: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgb(202, 235, 235);
+            background-color: rgb(145, 8, 225);
         }
         .div-res{
             justify-content: center;
             border: 8px;
             padding: 20px;
-            box-shadow: 0 0 10px rgb(91, 85, 85);
+            box-shadow: 0 0 10px rgb(41, 34, 47);
             width: 600px;
-            height: 400px;
+            height: 600px;
+            background-color: rgb(197, 129, 248);
+            border-radius: 15px;
         }
         h1{
              text-align: center;
@@ -26,11 +28,29 @@
         table, tr{
             padding-top: 30px;
             padding-bottom: 30px;
-            padding-left: 110px;
-            padding-right: 50px;
+            padding-left: 90px;
+            padding-right: 70px;
             font-size: 20px;
         }
-        
+        .form-cls input, .sel-clas {
+            border-radius: 4px;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 0px solid black;
+        }
+        .form-cls button{
+            padding: 8px;
+            margin-bottom: 10px;
+            text-align: center;
+            cursor: pointer;
+            width: 100%; 
+            color: rgb(15, 244, 244);
+            
+        }
+        .form-cls button:hover{
+            color: rgb(82, 174, 168);
+        }
+
     </style>
 </head>
 <body>
@@ -75,19 +95,19 @@
             <td><input type="tel" name="number" id="number"></td>
            </tr> 
            <tr>
-            <td><label for="religion">Religion</label></td>
+            <td><label for="religion" >Religion</label></td>
             <td>
-                <select name="religion" id="religion">
-                    <option>Hindu</option>
-                    <option>Christian</option>
-                    <option>Muslim</option>
-                    <option>Other</option>
+                <select name="religion" id="religion" class="sel-clas">
+                    <option class="sel-clas">Hindu</option>
+                    <option class="sel-clas">Christian</option>
+                    <option class="sel-clas">Muslim</option>
+                    <option class="sel-clas">Other</option>
                 </select>
             </td>
            </tr> 
            <tr>
-            <td style="font-size: 20px;"><a href="submitt.html"><input type="button" value="Submit"></a></td>
-            <td style="font-size: 20px;"><input type="reset" value="Reset"></td>
+            <td style="font-size: 20px;" class="but-cls"><a href="submitt.html"><input type="button" value="Submit"></a></td>
+            <td style="font-size: 20px;"class="but-cls" ><input type="reset" value="Reset"></td>
            </tr> 
         </table>
     </form>
